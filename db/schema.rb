@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_11_12_113656) do
   enable_extension "plpgsql"
 
   create_table "vehicles", force: :cascade do |t|
-    t.string "type"
+    t.string "flavour"
     t.string "weight"
     t.integer "half_hull"
     t.integer "maxgear"
