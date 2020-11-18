@@ -1,10 +1,12 @@
-<h3>Test</h3>
+<!DOCTYPE html>
+<html>
+<head>
+<title>PDFs | Ruby on Rails</title>
+  <%= wicked_pdf_stylesheet_link_tag "pdf" %>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
 
-<p> <%= @vehicle_1.flavour %> </p>
-<p> <%= @vehicle_2.flavour %> </p>
-<p> <%= @vehicle_3.flavour %> </p>
-<p> <%= @vehicle_4.flavour %> </p>
-<p> <%= @vehicle_5.flavour %> </p>
-<p> <%= @vehicle_6.flavour %> </p>
-<p> <%= @vehicle_7.flavour %> </p>
-<p> <%= @vehicle_8.flavour %> </p>
+
