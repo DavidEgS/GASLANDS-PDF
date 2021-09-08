@@ -5,7 +5,7 @@
 .card {
   height: 53mm;
   width: 73mm;
-  border: 1px solid #000;
+  border: 2mm solid #000;
   font-size: 12px;
 }
 
@@ -30,10 +30,7 @@
 }
 
 .hull p {
-  transform-origin: 0 0;
-  transform: rotate(90deg);
   writing-mode: vertical-rl;
-  text-orientation: mixed;
 }
 
 .empty-box {

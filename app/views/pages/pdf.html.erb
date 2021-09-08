@@ -19,10 +19,19 @@
       <p class="vehicle-desc"><%= @vehicle_1.weight %></p>
     </div>
     <div class="hull">
-      <p>Hull</p>
-      <div class="hull-boxes">
-
-      </div>
+    <p>hull</p>
+    <table>
+      <tr>
+        <% for i in 1..@vehicle_1.half_hull do %>
+          <td>X</td>
+        <% end %>
+      </tr>
+      <tr>
+        <% for i in 1..@vehicle_1.half_hull do %>
+          <td>X</td>
+        <% end %>
+      </tr>
+    </table>
     </div>
     <div class="gear">
       <div class="empty-box">
