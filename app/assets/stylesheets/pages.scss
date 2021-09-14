@@ -68,6 +68,15 @@ body {
 
 }
 
+.go,
+.ready,
+.marks {
+  width: 360px;
+  height: 180px;
+  margin-bottom: 128px;
+  background-size: cover;
+}
+
 .go label {
   color: green;
 }

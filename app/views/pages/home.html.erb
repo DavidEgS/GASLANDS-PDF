@@ -8,38 +8,37 @@
   <%= form_with url: pages_pdf_path(format: "pdf"), local: true, method: "get" do %>
     <div class="form-splitter">
       <div class="frm-side frm-side-one">
-        <div class="go" >
-          <%= image_tag 'grid.svg' %>
+        <div class="go" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_1, "Vehicle 1") %>
           <%= select_tag(:vehicle_1, options_for_select(@vehicle_select)) %>
         </div>
-        <div class="go">
+        <div class="go" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_3, "Vehicle 3") %>
           <%= select_tag(:vehicle_3, options_for_select(@vehicle_select)) %>
         </div>
-        <div class="ready">
+        <div class="ready" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_5, "Vehicle 5") %>
           <%= select_tag(:vehicle_5, options_for_select(@vehicle_select)) %>
         </div>
-        <div class="marks">
+        <div class="marks" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_7, "Vehicle 7") %>
           <%= select_tag(:vehicle_7, options_for_select(@vehicle_select)) %>
         </div>
       </div>
       <div class="frm-side frm-side-two">
-        <div class="go">
+        <div class="go" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_2, "Vehicle 2") %>
           <%= select_tag(:vehicle_2, options_for_select(@vehicle_select)) %>
         </div>
-        <div class="ready" >
+        <div class="ready" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_4, "Vehicle 4") %>
           <%= select_tag(:vehicle_4, options_for_select(@vehicle_select)) %>
         </div>
-        <div class="marks" >
+        <div class="marks" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_6, "Vehicle 6") %>
           <%= select_tag(:vehicle_6, options_for_select(@vehicle_select)) %>
         </div>
-        <div class="marks">
+        <div class="marks" style="background-image: url(<%= asset_url 'grid.svg' %>)">
           <%= label_tag(:vehicle_8, "Vehicle 8") %>
           <%= select_tag(:vehicle_8, options_for_select(@vehicle_select)) %>
         </div>
