@@ -14,5 +14,16 @@
  *= require_self
  */
 
+ @font-face {
+  font-family: 'Europa Brush';
+  src: url(asset-path("EuropaBrush-Regular.eot"));
+  src: url(asset-path("EuropaBrush-Regular.eot?#iefix"))  format("embedded-opentype"),
+        url(asset-path("EuropaBrush-Regular.woff2")) format("woff2"),
+        url(asset-path("EuropaBrush-Regular.woff")) format("woff"),
+        url(asset-path("EuropaBrush-Regular.ttf")) format("truetype"),      
+        url(asset-path("EuropaBrush-Regular.svg#EuropaBrush-Regular")) format("svg");
+  }
+
+
 @import 'pdf';
 @import 'pages';
