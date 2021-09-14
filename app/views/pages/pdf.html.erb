@@ -19,19 +19,26 @@
       <p class="vehicle-desc"><%= @vehicle_1.weight %></p>
     </div>
     <div class="hull">
-    <p>hull</p>
-    <table>
-      <tr>
-        <% for i in 1..@vehicle_1.half_hull do %>
-          <td>X</td>
-        <% end %>
-      </tr>
-      <tr>
-        <% for i in 1..@vehicle_1.half_hull do %>
-          <td>X</td>
-        <% end %>
-      </tr>
-    </table>
+    <div>
+      <div>h</div>
+      <div>u</div>
+      <div>l</div>
+      <div>l</div>
+    </div>
+    <div class="tingy">
+      <table>
+        <tr>
+          <% for i in 1..@vehicle_1.half_hull do %>
+            <td>X</td>
+          <% end %>
+        </tr>
+        <tr>
+          <% for i in 1..@vehicle_1.half_hull do %>
+            <td>X</td>
+          <% end %>
+        </tr>
+      </table>
+    </div>
     </div>
     <div class="gear">
       <div class="empty-box">

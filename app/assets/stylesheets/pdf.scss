@@ -29,8 +29,13 @@
   margin-right: 129px;
 }
 
-.hull p {
-  writing-mode: vertical-rl;
+.hull {
+  display: inline-block;
+}
+.tingy {
+  width: 80mm;
+  display: inline-block;
+  float: right;
 }
 
 .empty-box {
@@ -49,7 +54,7 @@
 }
 
 .gear {
-  display: flex;
+
 }
 
 .info-section p {
