@@ -1,46 +1,52 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
+<div class="banner" >
+  <h1>Gaslands vehicle cards PDF generator</h1>
+  <p>This app is for use in conjunction with Gaslands. You can generate a printable PDF of vehicle stat cards selecting the vehicle type for each one.
+  We recommend cutting them out and placing in a card sleeve for use with a wipable pen.</p>
+</div>
+<div class="checkerboard">   </div>
 
   <%= form_with url: pages_pdf_path(format: "pdf"), local: true, method: "get" do %>
     <div class="form-splitter">
       <div class="frm-side frm-side-one">
-        <div>
+        <div class="go" >
+          <%= image_tag 'grid.svg' %>
           <%= label_tag(:vehicle_1, "Vehicle 1") %>
           <%= select_tag(:vehicle_1, options_for_select(@vehicle_select)) %>
         </div>
-        <div>
+        <div class="go">
           <%= label_tag(:vehicle_3, "Vehicle 3") %>
           <%= select_tag(:vehicle_3, options_for_select(@vehicle_select)) %>
         </div>
-        <div>
+        <div class="ready">
           <%= label_tag(:vehicle_5, "Vehicle 5") %>
           <%= select_tag(:vehicle_5, options_for_select(@vehicle_select)) %>
         </div>
-        <div>
+        <div class="marks">
           <%= label_tag(:vehicle_7, "Vehicle 7") %>
           <%= select_tag(:vehicle_7, options_for_select(@vehicle_select)) %>
         </div>
       </div>
       <div class="frm-side frm-side-two">
-        <div>
+        <div class="go">
           <%= label_tag(:vehicle_2, "Vehicle 2") %>
           <%= select_tag(:vehicle_2, options_for_select(@vehicle_select)) %>
         </div>
-        <div>
+        <div class="ready" >
           <%= label_tag(:vehicle_4, "Vehicle 4") %>
           <%= select_tag(:vehicle_4, options_for_select(@vehicle_select)) %>
         </div>
-        <div>
+        <div class="marks" >
           <%= label_tag(:vehicle_6, "Vehicle 6") %>
           <%= select_tag(:vehicle_6, options_for_select(@vehicle_select)) %>
         </div>
-        <div>
+        <div class="marks">
           <%= label_tag(:vehicle_8, "Vehicle 8") %>
           <%= select_tag(:vehicle_8, options_for_select(@vehicle_select)) %>
         </div>
       </div>
     </div>
-  <%= submit_tag("Generate PDF") %>
+    <div class="submit-container">
+      <%= submit_tag "Generate PDF", class: "big-submit" %>
+    </div>
 <% end %>
 
