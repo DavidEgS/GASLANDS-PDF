@@ -1,3 +1,86 @@
 .red {
   color: red;
 }
+
+.card {
+  height: 53mm;
+  width: 73mm;
+  border: 2mm solid #000;
+  font-size: 12px;
+}
+
+.card-contents {
+  padding: 8px;
+}
+
+.card-title {
+  margin-top: 16px;
+  border-top: 1px dashed #000;
+  padding-top: 2px;
+}
+
+.vehicle-desc {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.flavour {
+  margin-right: 129px;
+}
+
+.hull {
+  display: inline-block;
+}
+.tingy {
+  width: 80mm;
+  display: inline-block;
+  float: right;
+}
+
+.empty-box {
+  height: 16mm;
+  width: 50mm;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.gear-box {
+  height: 16mm;
+  width: 16mm;
+  border: 1px solid #000;
+  display: inline-block;
+  float: right;
+}
+
+.gear {
+
+}
+
+.info-section p {
+  display: inline-block;
+}
+
+.handling,
+.crew {
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.cans-line {
+  border-bottom: 1px dashed #000;
+  width: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

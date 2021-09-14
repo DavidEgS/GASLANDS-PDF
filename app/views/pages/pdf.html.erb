@@ -11,3 +11,48 @@
 <p> <%= @vehicle_6.flavour %> </p>
 <p> <%= @vehicle_7.flavour %> </p>
 <p> <%= @vehicle_8.flavour %> </p>
+
+<div class='card'>
+  <div class="card-contents">
+    <div class="card-title">
+      <p class="vehicle-desc flavour"><%= @vehicle_1.flavour%></p>
+      <p class="vehicle-desc"><%= @vehicle_1.weight %></p>
+    </div>
+    <div class="hull">
+    <div>
+      <div>h</div>
+      <div>u</div>
+      <div>l</div>
+      <div>l</div>
+    </div>
+    <div class="tingy">
+      <table>
+        <tr>
+          <% for i in 1..@vehicle_1.half_hull do %>
+            <td>X</td>
+          <% end %>
+        </tr>
+        <tr>
+          <% for i in 1..@vehicle_1.half_hull do %>
+            <td>X</td>
+          <% end %>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="gear">
+      <div class="empty-box">
+
+      </div>
+      <div class="gear-box">
+
+      </div>
+    </div>
+    <div class="info-section">
+      <p class="handling">HANDLING:<%= @vehicle_1.handling %></p>
+      <p class="crew">CREW:<%= @vehicle_1.crew %></p>
+      <p>CANS:</p><span class="cans-line"></span>
+    </div>
+  </div>
+</div>
+
